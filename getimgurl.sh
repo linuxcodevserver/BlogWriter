@@ -1,3 +1,3 @@
 #!/bin/bash
-echo "https://okaitslinblog.github.io/img/$1"
+echo "https://linuxcodevserver.github.io/linuxcodevblog/img/$1"
 exit
