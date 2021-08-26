@@ -1,16 +1,16 @@
 #!/bin/bash
-if ls okaitslinblog.github.io > /dev/null 2>&1
+if ls linuxcodevblog > /dev/null 2>&1
   then
   true
   else
-  gh repo clone okaitslinblog/okaitslinblog.github.io
+  gh repo clone linuxcodevserver/linuxcodevblog
 fi
 if ls img/* > /dev/null 2>&1
   then
-  mv img/* okaitslinblog.github.io/img/
+  mv img/* linuxcodevblog/img/
 fi
-mv $1 okaitslinblog.github.io/_posts/
-cd okaitslinblog.github.io
+mv $1 linuxcodevblog/_posts/
+cd linuxcodevblog
 ls
 echo "アップロード処理を開始します。"
 git add .
