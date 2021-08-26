@@ -25,5 +25,5 @@ With this program you can easily post to linuxcodevblog.
 
 5 ./upload.shを実行する
 ./upload.sh 本文のファイル<br>
-<b>もし、 「Which should be the base repository (used for e.g. querying issues) for this directory?」と聞かれたら、「okaitslinblog/okaitslinblog.github.io」と答えてください。<br>
-また、「Where should we push the 'gh-pages' branch?」と聞かれたら、「Create a fork of okaitslinblog/okaitslinblog.github.io」と答えてください。<br></b>
+<b>もし、 「Which should be the base repository (used for e.g. querying issues) for this directory?」と聞かれたら、「linuxcodevserver/linuxcodevblog」と答えてください。<br>
+また、「Where should we push the 'gh-pages' branch?」と聞かれたら、「Create a fork of linuxcodevserver/linuxcodevblog」と答えてください。<br></b>
