@@ -44,14 +44,15 @@ while true
     echo "3) CSS"
     echo "4) Python"
     echo "5) その他(自動認識)"
-    read -p "> " lang
+    read -p "言語(1-5)> " lang
     case "$lang" in
-      1) lang="lang-bash" ;;
-      2) lang="lang-html" ;;
-      3) lang="lang-css" ;;
-      4) lang="lang-python" ;;
+      1) lang=" lang-bash" ;;
+      2) lang=" lang-html" ;;
+      3) lang=" lang-css" ;;
+      4) lang=" lang-python" ;;
+      5) lang="" ;;
     esac
-    echo -n '<pre class="prettyprint><code class="prettyprint '${lang}'>' >> $fn
+    echo -n '<pre class="prettyprint><code class="prettyprint'${lang}'>' >> $fn
   fi
   if [ "$b" = "blogwriter.commands.code.end" ]
     then
