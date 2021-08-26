@@ -10,10 +10,10 @@ With this program you can easily post to linuxcodevblog.
 画像のURL（仮）が出てきます。
 アップロードは./upload.shで行われます。
 
-1. yyyy-mm-dd-タイトル.mdにhtmlかmdでブログの本文を書く
+1 yyyy-mm-dd-タイトル.mdにhtmlかmdでブログの本文を書く
 (例：2021-08-26-○○をする方法.md)
 
-2. ./blogwriter.shを実行する
+2 ./blogwriter.shを実行する
 ./blogwriter.sh 本文のファイル
 
 3 ./convertc.shを実行する
@@ -23,7 +23,7 @@ With this program you can easily post to linuxcodevblog.
 写真を移動させます。
 ./mvimg.sh 画像の名前
 
-4 ./upload.shを実行する
-./upload.sh 本文のファイル
+5 ./upload.shを実行する
+./upload.sh 本文のファイル<br>
 <b>もし、 「Which should be the base repository (used for e.g. querying issues) for this directory?」と聞かれたら、「okaitslinblog/okaitslinblog.github.io」と答えてください。<br>
 また、「Where should we push the 'gh-pages' branch?」と聞かれたら、「Create a fork of okaitslinblog/okaitslinblog.github.io」と答えてください。<br></b>
