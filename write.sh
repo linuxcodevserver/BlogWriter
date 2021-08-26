@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "Blog Writer Started."
 echo 'By okaits#7534'
-echo "linuxcodevblog(皆の意見交流所公式ブログ)に投稿します。"
+echo "okaitslinblogに投稿します。"
 read -p "日付（yyyy-mm-dd, 例: 2021-08-23(2021年8月23日)> " date
 fn=$date
 read -p "タイトル> " title
@@ -61,19 +61,19 @@ while true
   echo $b >> $fn
   done
 echo "アップロードします。"
-if ls linuxcodevblog > /dev/null 2>&1
+if ls okaitslinblog > /dev/null 2>&1
   then
-  echo "linuxcodevblogを発見しました。cloneをキャンセルします。"
+  echo "okaitslinblogを発見しました。cloneをキャンセルします。"
   else
-  echo "linuxcodevblogがありません。cloneします。"
-  git clone https://github.com/linuxcodevserver/linuxcodevblog
+  echo "okaitslinblogがありません。cloneします。"
+  git clone https://github.com/okaitslinblog/okaitslinblog.github.io
   echo "cloneが終わりました。"
 fi
-cd linuxcodevblog
+cd okaitslinblog
 git checkout gh-pages
 mv ../${fn} ./_posts/
 echo "アップロード処理を開始します。"
-echo "選択肢がでたら、絶対にlinuxcodevserver/linuxcodevblogを選んでください。"
+echo "もし選択肢がでたら、絶対にokaitslinblog/okaitslinblog.github.ioを選んでください。"
 gh pr create --title "[add] Post" --body "Automaticaly created by blogwriter"
 echo "アップロード処理が完了しました。"
 exit
